@@ -1,0 +1,53 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1618723998073' stop='1618723998164'>
+    <name>interaction with web element</name>
+    <title>interaction with web element</title>
+    <test-cases>
+        <test-case start='1618723998073' status='broken' stop='1618723998148'>
+            <name>Click the sign in button on My Store Landing page</name>
+            <title>Click the sign in button on My Store Landing page</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='Chrome-90.0.4430.72'/>
+            </parameters>
+            <steps>
+                <step start='1618723998153' status='undefined'>
+                    <name>findElement</name>
+                    <title>findElement</title>
+                    <attachments>
+                        <attachment title='Request' source='ecb8fff3-8720-44e9-a9ad-1a9a52ba23c4-attachment.json' type='application/json' size='52'/>
+                    </attachments>
+                    <steps>
+                        <step start='1618723998158' status='undefined'>
+                            <name>findElement</name>
+                            <title>findElement</title>
+                            <attachments>
+                                <attachment title='Request' source='45376983-0d4d-4e97-bae2-cc73f45423a3-attachment.json' type='application/json' size='55'/>
+                            </attachments>
+                            <steps>
+                                <step start='1618723998159' status='undefined'>
+                                    <name>takeScreenshot</name>
+                                    <title>takeScreenshot</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                            </steps>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>txtEmail.setValue is not a function</message>
+                <stack-trace>TypeError: txtEmail.setValue is not a function
+                    at Context.&lt;anonymous> (C:\Automation\webdriver-io-mocha\test\element.js:9:10)
+                    at Context.executeAsync (C:\Automation\webdriver-io-mocha\node_modules\@wdio\utils\build\shim.js:136:25)
+                    at Context.testFrameworkFnWrapper (C:\Automation\webdriver-io-mocha\node_modules\@wdio\utils\build\test-framework\testFnWrapper.js:45:32)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

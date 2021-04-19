@@ -1,0 +1,60 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1618723338935' stop='1618723339057'>
+    <name>interaction with web element</name>
+    <title>interaction with web element</title>
+    <test-cases>
+        <test-case start='1618723338936' status='passed' stop='1618723339031'>
+            <name>Click the sign in button on My Store Landing page</name>
+            <title>Click the sign in button on My Store Landing page</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='Chrome-90.0.4430.72'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1618723339032' status='broken' stop='1618723339053'>
+            <name>Login using Valid credentials on the MyStore Login page</name>
+            <title>Login using Valid credentials on the MyStore Login page</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='Chrome-90.0.4430.72'/>
+            </parameters>
+            <steps>
+                <step start='1618723339035' status='broken' stop='1618723339053'>
+                    <name>findElement</name>
+                    <title>findElement</title>
+                    <attachments>
+                        <attachment title='Request' source='9444f9c5-f744-44c5-9db1-799885ad2b9e-attachment.json' type='application/json' size='52'/>
+                    </attachments>
+                    <steps>
+                        <step start='1618723339040' status='broken' stop='1618723339053'>
+                            <name>navigateTo</name>
+                            <title>navigateTo</title>
+                            <attachments>
+                                <attachment title='Request' source='235920f7-5707-4204-a080-b0495de5b626-attachment.json' type='application/json' size='45'/>
+                            </attachments>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>txtEmail.updateValueAndValidity is not a function</message>
+                <stack-trace>TypeError: txtEmail.updateValueAndValidity is not a function
+                    at Context.&lt;anonymous> (C:\Automation\webdriver-io-mocha\test\element.js:14:11)
+                    at Context.executeAsync (C:\Automation\webdriver-io-mocha\node_modules\@wdio\utils\build\shim.js:136:25)
+                    at Context.testFrameworkFnWrapper (C:\Automation\webdriver-io-mocha\node_modules\@wdio\utils\build\test-framework\testFnWrapper.js:45:32)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
